@@ -1,0 +1,9 @@
+{
+	"Logo": "Mithu",
+    "portfolio": "https://mithu-vulcan.github.io/MyPortfolio/",
+	"headerConfig": {
+		"links": {
+			"Blogs": "/all"
+		}
+	}
+}
