@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-bg-dark: hsl(0, 0%, 15%);
+    --color-bg-light: hsl(0, 0%, 90%);
+
+    --color-text-dark: hsl(0, 0%, 90%);
+    --width-max: 600px;
+
+    --font-logo: "Major Mono Display";
+    --font-normal: "Poppins";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-normal);
+    color: var(--color-text-dark);
+}
+
+body {
+    background-color: var(--color-bg-dark);
+}

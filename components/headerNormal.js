@@ -9,14 +9,47 @@ class headerNormal extends HTMLElement {
                 <a href="${link}"><p class="navItem">${name}</p></a>
             `;
 		}
-		this.innerHTML = `
-            <section class="header">
+
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.innerHTML = `
+
+			<style>
+				.header {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				.logo {
+					font-family: var(--font-logo);
+					font-weight: 600;
+					font-size: 2rem;
+					padding: 1rem;
+					margin: 0;
+				}
+
+				.navItems {
+					display: flex;
+				}
+
+				.navItem {
+					padding: 1rem;
+					font-size: 1rem;
+					margin: 0;
+				}
+
+				a {
+					text-decoration: none;
+					color: inherit;
+				}				
+			</style>
+			<section class="header">
                 <p class="logo">${logo}</p>
                 <div class="navItems">
                     ${navItems}
                 </div>
             </section>
-        `;
+		`;
 	}
 }
 
